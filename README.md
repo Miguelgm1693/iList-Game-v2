@@ -11,8 +11,12 @@ La primera pantalla que nos encontraremos al acceder a la aplicación es la de l
 ![](1.png)
 
 ## Crear Cuenta
-En el caso de que no tengamos una cuenta para acceder a iList-Game, podremos hacerlo pulsando sobre "Crear cuenta" y dentro registrarnos con un correo y contraseña de acceso.
+En el caso de que no tengamos una cuenta para acceder a iList-Game, podremos hacerlo pulsando sobre "Crear cuenta" y dentro registrarnos con un correo y contraseña de acceso. <br> <br>
+
+![](2.png)
 
 ## Recuperación de Contraseña
-Si tenemos cuenta para la aplicación pero se nos ha olvidado la contraseña, ¡no te preocupes!. Si pulsamos sobre el botón de "Recuperar contraseña", accederemos a la ventana en la cuál nos solicitará un correo electrónica al que poder enviar la recuperación de la cuenta.
+Si tenemos cuenta para la aplicación pero se nos ha olvidado la contraseña, ¡no te preocupes!. Si pulsamos sobre el botón de "Recuperar contraseña", accederemos a la ventana en la cuál nos solicitará un correo electrónica al que poder enviar la recuperación de la cuenta. <br> <br>
+
+![](3.png)
 
