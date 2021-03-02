@@ -20,3 +20,13 @@ Si tenemos cuenta para la aplicación pero se nos ha olvidado la contraseña, ¡
 
 ![](3.png)
 
+## Pantalla principal - Lista de Juegos
+En esta lista, podremos apreciar una lista completa sobre juegos que se han ido agregando a lo largo del uso de la aplicación. Esta lista es completamente pública por lo tanto, cualquier usuario puede ir agregando videojuegos. <br> <br>
+
+![](5.png)
+
+## Agregar un videojuego
+En esta pantalla, podemos ir añadiendo videojuegos los cuáles se van a ir agregando a la Lista de Juegos, que es la pantalla principal. <br> <br>
+
+![](6.png)
+
