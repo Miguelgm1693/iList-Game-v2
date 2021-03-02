@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <ion-item *ngFor="let j of juegos |async">
+  <ion-item *ngFor="let j of juegos">
     <ion-thumbnail slot="start">
       <img [src]="j.imgUrl">
     </ion-thumbnail>
@@ -20,8 +20,8 @@
     </ion-label>
 
 
-    <ion-button color="danger">
-      <ion-icon slot="icon-only" name="trash" ></ion-icon>
+    <ion-button (click)="onRemoveGame(j.juegoId)" color="danger">
+      <ion-icon  slot="icon-only" name="trash" ></ion-icon>
     </ion-button>
 
   </ion-item>

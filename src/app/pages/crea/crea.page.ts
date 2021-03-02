@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Juego } from 'src/app/model/juego';
 import { ItemService } from 'src/app/services/item.service';
 
@@ -15,7 +15,8 @@ export class CreaPage implements OnInit {
 
   constructor(
     private itemService: ItemService,
-    private router: Router
+    private router: Router,
+    private activatedRoute: ActivatedRoute
   ) { }
 
   ngOnInit() {

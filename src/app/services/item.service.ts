@@ -10,12 +10,13 @@ import { AuthService } from './auth.service';
 })
 export class ItemService {
 
+  juegos: Observable<Juego[]>
   userId: string;
 
   constructor(
     private db: AngularFirestore,
     private authService: AuthService,
-    
+
   ) { 
     this.authService.getCurrentUser().subscribe(
       data => this.userId = data.uid
@@ -34,8 +35,8 @@ export class ItemService {
         map(
           snaps => snaps.map(
             snap => <Juego> {
+              ...snap.payload.doc.data() as Juego,
               juegoId: snap.payload.doc.id,
-              ...snap.payload.doc.data() as Juego
             } 
           )
         )
@@ -43,9 +44,31 @@ export class ItemService {
 
   }
 
-  anadirMiLista(juego: Juego): Promise<DocumentReference> {
-    return this.db.collection<Juego>('users/' + this.userId + '/juegos').add(juego);
+  public anadirMiLista(juego: Juego): Promise<DocumentReference> {
+    return this.db.collection('users/' + this.userId + '/juegos').add(juego);
   }
 
+  public removeGameFromMiLista(idJuego: string): void {
+    this.db.collection('users/' + this.userId + '/juegos').doc(idJuego).delete();
+  }
+
+  public getJuegoById(id: string): Observable<Juego>{
+    return this.db.collection('users/' + this.userId + '/juegos').doc<Juego>(id).valueChanges();
+  }
+
+  public getAnadirMiLista(userId: string): Observable<Juego[]> {
+    return this.db.collection<Juego>('users/' + userId + '/juegos').snapshotChanges()
+    .pipe(
+      map(
+        snaps => snaps.map(
+          snap => <Juego> {
+            ...snap.payload.doc.data(), // as Juego
+            juegoId: snap.payload.doc.id,
+          } 
+        )
+      )
+    );
+      
+  }
 
 }

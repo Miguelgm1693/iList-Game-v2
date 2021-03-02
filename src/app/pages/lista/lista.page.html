@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <ion-item *ngFor="let j of juegos |async">
+  <ion-item *ngFor="let j of juegos | async">
     <ion-thumbnail slot="start">
       <img [src]="j.imgUrl">
     </ion-thumbnail>
@@ -19,14 +19,11 @@
       <p>{{j.categoria}}</p>
     </ion-label>
 
-    <ion-button color="success"(click)="anadirMiLista(juegos)">
+    <ion-button color="success"(click)="anadirMiLista(j)">
       <ion-icon name="add"></ion-icon>
     </ion-button> 
 
     <ion-icon name="blank"></ion-icon>
-
-    
-  
 
   </ion-item>
 

@@ -12,14 +12,14 @@ export class AuthService {
     private afAuth: AngularFireAuth
   ) { }
 
-  login (
+  public login (
     email: string,
     password: string
   ): Promise<firebase.default.auth.UserCredential> {
     return this.afAuth.signInWithEmailAndPassword(email, password);
   }
 
-  public getCurrentUser():Observable<firebase.default.User> {
+  public getCurrentUser(): Observable<firebase.default.User> {
     return this.afAuth.authState;
   }
 

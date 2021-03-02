@@ -15,7 +15,7 @@ export class ListaPage implements OnInit {
 
   constructor(
     private itemService: ItemService,
-    private router: Router
+    private router: Router,
 
   ) { 
     this.juegos = this.itemService.getJuegos();
@@ -26,13 +26,12 @@ export class ListaPage implements OnInit {
   }
 
   addJuego() {
-    this.router.navigateByUrl('/crear-juego')
+    this.router.navigateByUrl('/crear-juego');
 
   }
 
   anadirMiLista (juego:Juego) {
     this.itemService.anadirMiLista(juego);
-    
   }
 
   

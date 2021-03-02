@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { AngularFireAuthGuard, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
+import { AngularFireAuthGuard, canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
 
 
 const redirectUnaAuthorizedToLogin = () => redirectUnauthorizedTo(["login"]);
@@ -57,7 +57,9 @@ const routes: Routes = [
 
   {
     path: 'milista',
-    loadChildren: () => import('./pages/milista/milista.module').then( m => m.MilistaPageModule)
+    loadChildren: () => import('./pages/milista/milista.module').then( m => m.MilistaPageModule),
+                                                                canActivate:[AngularFireAuthGuard],
+                                                                data: { authGuardPipe: redirectUnaAuthorizedToLogin}
   },
 
   {

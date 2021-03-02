@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { take } from 'rxjs/operators';
 import { Juego } from 'src/app/model/juego';
+import { AuthService } from 'src/app/services/auth.service';
+import { ItemService } from 'src/app/services/item.service';
 
 @Component({
   selector: 'app-milista',
@@ -9,11 +11,28 @@ import { Juego } from 'src/app/model/juego';
 })
 export class MilistaPage implements OnInit {
 
-  juegos: Observable<Juego[]>;
+  juegos: Juego[];
 
-  constructor() { }
+  constructor(
+    private itemService: ItemService,
+    private authService: AuthService,
+    ) { }
+    
+    ngOnInit() {
 
-  ngOnInit() {
+      this.authService.getCurrentUser().pipe(take(1))
+      .subscribe((data: any) => {
+        const userId = data.uid;
+        this.itemService.getAnadirMiLista(userId).subscribe((resp: Juego[]) => {
+          this.juegos = resp;
+        });
+     });
+
+  }
+
+
+  onRemoveGame(idJuego: string) {
+    this.itemService.removeGameFromMiLista(idJuego);
   }
 
 }
