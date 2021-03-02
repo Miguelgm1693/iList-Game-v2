@@ -9,3 +9,9 @@ En ella podremos seleccionar el videojuego que queramos y agregarlo a nuestra li
 ## Login
 La primera pantalla que nos encontraremos al acceder a la aplicación es la de login, en la que necesitaremos estar registrados para poder acceder a la misma.
 
+## Crear Cuenta
+En el caso de que no tengamos una cuenta para acceder a iList-Game, podremos hacerlo pulsando sobre "Crear cuenta" y dentro registrarnos con un correo y contraseña de acceso.
+
+## Recuperación de Contraseña
+Si tenemos cuenta para la aplicación pero se nos ha olvidado la contraseña, ¡no te preocupes!. Si pulsamos sobre el botón de "Recuperar contraseña", accederemos a la ventana en la cuál nos solicitará un correo electrónica al que poder enviar la recuperación de la cuenta.
+
