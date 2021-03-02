@@ -35,5 +35,12 @@ Si pinchamos en el menú hamburguesa que nos aparece en la parte superior, podem
 
 ![](7.png)
 
+## Mi Lista -- Acceso privado para cada usuario
+Al desplegar el menú hamburguesa, podemos acceder al apartado "Mi Lista", al cuál podremos ver una lista con los videojuegos que nosotros hayamos agregado anteriormente de la lista de Juegos de la pantalla principal, los cuales, se irán agregando respectivamente cuando le vayamos dando al botón verde de añadir. <br>
+Dentro de la lista como hemos dicho anteriormente, vamos a poder ver los juegos agregados. Al igual que hemos podido agregar, vamos a poder eliminar pulsando sobre la papelera del botón rojo. <br> <br>
+
+![](8.png)
+
+
 
 
