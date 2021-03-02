@@ -30,3 +30,10 @@ En esta pantalla, podemos ir añadiendo videojuegos los cuáles se van a ir agre
 
 ![](6.png)
 
+## Menú de navegación
+Si pinchamos en el menú hamburguesa que nos aparece en la parte superior, podemos acceder a distintos puntos de la aplicación. En este caso podremos "Cerrar Sesión", ver "Mi Lista" y obtener información de la aplicación en "Sobre Aplicación". <br> <br>
+
+![](7.png)
+
+
+
