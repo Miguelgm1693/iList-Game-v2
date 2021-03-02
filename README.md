@@ -41,6 +41,22 @@ Dentro de la lista como hemos dicho anteriormente, vamos a poder ver los juegos 
 
 ![](8.png)
 
+## Sobre la Aplicación
+Pantalla sobre la que aparecerá una breve explicación sobre el funcionamiento de la aplicación junto con el nombre del desarrollador y el enlace al perfil de Github <br> <br>
+
+![](9.png)
+
+## Vídeo sobre la Aplicación en Youtube
+
+https://youtu.be/s4MAVDdpEc8
+
+## Futuras Versiones
+- Insertar en menú desplegable la opción de "Mi Perfil" y poder editar y ver todos los datos de usuario.
+- Tocar sobre el nombre del videojuego y que nos aparezca una pequeña información sobre el mismo.
+- Poder hacer un ranking de nota media entre todos los usuarios y notas que se le den a los juegos.
+- Implementar la clasificación del juego por estrellas.
+- En el perfil poder agregar un nombre de usuario y crear una pequeña red entre jugadores.
+- Implementar el apartado de la cámara para poder agregar nuestras propias carcasas.
 
 
 
