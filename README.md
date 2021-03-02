@@ -46,7 +46,7 @@ Pantalla sobre la que aparecerá una breve explicación sobre el funcionamiento 
 
 ![](9.png)
 
-## Vídeo sobre la Aplicación en Youtube
+## Vídeo sobre la Aplicación iList-Game v.2.0 en Youtube
 
 https://youtu.be/s4MAVDdpEc8
 
@@ -57,6 +57,9 @@ https://youtu.be/s4MAVDdpEc8
 - Implementar la clasificación del juego por estrellas.
 - En el perfil poder agregar un nombre de usuario y crear una pequeña red entre jugadores.
 - Implementar el apartado de la cámara para poder agregar nuestras propias carcasas.
+
+##
+Si te gustó la aplicación no olvides dejar tu estrellita ⭐
 
 
 
