@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/lista"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Agregar Juego</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-label position="floating"> Título </ion-label>
+    <ion-input [(ngModel)]="juego.titulo"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="floating"> Categoría </ion-label>
+    <ion-select interface="popover" [(ngModel)]="juego.categoria">
+      <ion-select-option value="Accion">Acción</ion-select-option>
+      <ion-select-option value="Aventura">Aventura</ion-select-option>
+      <ion-select-option value="Acción/Aventura">Acción/Aventura</ion-select-option>
+      <ion-select-option value="Terror">Terror</ion-select-option>
+      <ion-select-option value="Shooter">Shooter 1ª Persona</ion-select-option>
+      <ion-select-option value="Estrategia">Estrategia</ion-select-option>
+      <ion-select-option value="Plataformas">Plataforma</ion-select-option>
+      <ion-select-option value="Arcade">Arcade</ion-select-option>
+      <ion-select-option value="Desportivo">Deportivo</ion-select-option>
+      <ion-select-option value="Conducción">Conducción</ion-select-option>
+      <ion-select-option value="Simulación">Simulación</ion-select-option>
+      <ion-select-option value="RPG">RPG</ion-select-option>
+      <ion-select-option value="Pelea">Peleas</ion-select-option>
+      <ion-select-option value="Musical">Musical</ion-select-option>
+      <ion-select-option value="Carta">Cartas</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="floating"> Acabado el </ion-label>
+    <ion-datetime [(ngModel)]="juego.fin" displayFormat="D M YYYY" min="1990-01-01" max="2050-12-31"></ion-datetime>
+  </ion-item>
+  
+  <ion-list>
+    <ion-item>
+      <ion-label>Plataforma</ion-label>
+      <ion-select interface="popover" [(ngModel)]="juego.plataforma">
+        <ion-select-option value="Playstation">PlayStation</ion-select-option>
+        <ion-select-option value="Playstation 2">Playstation 2</ion-select-option>
+        <ion-select-option value="Playstation 3">PlayStation 3</ion-select-option>
+        <ion-select-option value="Playstation 4">PlayStation 4</ion-select-option>
+        <ion-select-option value="Playstation 5">PlayStation 5</ion-select-option>
+        <ion-select-option value="Xbox">Xbox</ion-select-option>
+        <ion-select-option value="Xbox One">Xbox One</ion-select-option>
+        <ion-select-option value="Xbox Series">Xbox Series</ion-select-option>
+        <ion-select-option value="Nintendo 3DS">Nintendo 3DS</ion-select-option>
+        <ion-select-option value="Nintendo DS">Nintendo DS</ion-select-option>
+        <ion-select-option value="Nintendo Switch">Nintendo Switch</ion-select-option>
+        <ion-select-option value="Nintendo Wii">Nintendo Wii</ion-select-option>
+        <ion-select-option value="PC">PC</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-label position="floating">Imagen Juego URL</ion-label>
+    <ion-input
+      class="text"
+      clearInput
+      [(ngModel)]="juego.imgUrl">
+    </ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Nota</ion-label>
+    <ion-range min="0" max="10" pin color="secondary" [(ngModel)]="juego.nota" >
+      <ion-icon slot="start" name="heart"></ion-icon>
+    </ion-range>
+  </ion-item>
+  
+  <ion-button (click)="guardarJuego()" expand="block" fill="clear" shape="around">
+    Guardar  
+  </ion-button>
+
+</ion-content>

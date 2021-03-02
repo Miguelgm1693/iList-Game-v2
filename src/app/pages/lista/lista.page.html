@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center" class="titulo">Lista juegos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item *ngFor="let j of juegos |async">
+    <ion-thumbnail slot="start">
+      <img [src]="j.imgUrl">
+    </ion-thumbnail>
+
+    <ion-label class="texto">
+      <h2>{{j.titulo}}</h2>
+      <h3>{{j.plataforma}}</h3>
+      <p>{{j.categoria}}</p>
+    </ion-label>
+
+    <ion-button color="success"(click)="anadirMiLista(juegos)">
+      <ion-icon name="add"></ion-icon>
+    </ion-button> 
+
+    <ion-icon name="blank"></ion-icon>
+
+    
+  
+
+  </ion-item>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="addJuego()" color="medium">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

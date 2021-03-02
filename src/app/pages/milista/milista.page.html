@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="lista"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="titulo">Mi Lista</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item *ngFor="let j of juegos |async">
+    <ion-thumbnail slot="start">
+      <img [src]="j.imgUrl">
+    </ion-thumbnail>
+
+    <ion-label class="texto">
+      <h2>{{j.titulo}}</h2>
+      <h3>{{j.plataforma}}</h3>
+      <p>{{j.categoria}}</p>
+    </ion-label>
+
+
+    <ion-button color="danger">
+      <ion-icon slot="icon-only" name="trash" ></ion-icon>
+    </ion-button>
+
+  </ion-item>
+
+</ion-content>
