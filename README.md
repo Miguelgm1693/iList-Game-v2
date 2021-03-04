@@ -50,7 +50,7 @@ Pantalla sobre la que aparecerá una breve explicación sobre el funcionamiento 
 
 ## Vídeo sobre la Aplicación iList-Game v.2.0 en Youtube
 
-https://youtu.be/s4MAVDdpEc8
+https://youtu.be/OucamVdFPeg
 
 ## Futuras Versiones
 - Insertar en menú desplegable la opción de "Mi Perfil" y poder editar y ver todos los datos de usuario.
