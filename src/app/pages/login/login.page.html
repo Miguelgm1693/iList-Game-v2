@@ -19,8 +19,10 @@
       <ion-input
         class="texto ion-text-center"
         clearInput
+        value = {{ultemail}}
         placeholder="Correo electrónico"
-        [(ngModel)]="email">
+        [(ngModel)]="email"
+        (click)="recordar()">
       </ion-input>
     </ion-item>
 

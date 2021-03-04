@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 import { AuthService } from 'src/app/services/auth.service';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'app-login',
@@ -13,12 +14,16 @@ export class LoginPage implements OnInit {
   
   email: string;
   password: string;
+  ultemail: string;
+
   private cargando: boolean;
 
   constructor(
     private authService: AuthService,
     private router: Router,
-    public alertController: AlertController
+    public alertController: AlertController,
+    private storage: Storage
+    
   ) { }
 
   ngOnInit() {
@@ -33,6 +38,15 @@ export class LoginPage implements OnInit {
     } catch (error) {
       this.presentAlert();
     }
+
+    this.storage.set(this.ultemail, this.email);
+
+  }
+
+  recordar() {
+    this.storage.get(this.ultemail).then((ultemail) => {
+      this.ultemail = ultemail;
+    })
   }
 
   async presentAlert() {
