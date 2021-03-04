@@ -10,6 +10,7 @@ https://ilist-game-v2.web.app/login
 ## Login
 La primera pantalla que nos encontraremos al acceder a la aplicación es la de login, en la que necesitaremos estar registrados para poder acceder a la misma. <br> <br>
 ![](1.png)
+![](gifemail.gif)
 
 ## Crear Cuenta
 En el caso de que no tengamos una cuenta para acceder a iList-Game, podremos hacerlo pulsando sobre "Crear cuenta" y dentro registrarnos con un correo y contraseña de acceso. <br> <br>
