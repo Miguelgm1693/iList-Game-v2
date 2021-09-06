@@ -53,12 +53,12 @@ Pantalla sobre la que aparecerá una breve explicación sobre el funcionamiento 
 https://youtu.be/OucamVdFPeg
 
 ## Futuras Versiones
--[ ] Insertar en menú desplegable la opción de "Mi Perfil" y poder editar y ver todos los datos de usuario. <br>
--[ ] Tocar sobre el nombre del videojuego y que nos aparezca una pequeña información sobre el mismo. <br>
--[ ] Poder hacer un ranking de nota media entre todos los usuarios y notas que se le den a los juegos. <br>
--[ ] Implementar la clasificación del juego por estrellas. <br>
--[ ] En el perfil poder agregar un nombre de usuario y crear una pequeña red entre jugadores. <br>
--[ ] Implementar el apartado de la cámara para poder agregar nuestras propias caratulas. <br>
+- [ ] Insertar en menú desplegable la opción de "Mi Perfil" y poder editar y ver todos los datos de usuario. <br>
+- [ ] Tocar sobre el nombre del videojuego y que nos aparezca una pequeña información sobre el mismo. <br>
+- [ ] Poder hacer un ranking de nota media entre todos los usuarios y notas que se le den a los juegos. <br>
+- [ ] Implementar la clasificación del juego por estrellas. <br>
+- [ ] En el perfil poder agregar un nombre de usuario y crear una pequeña red entre jugadores. <br>
+- [ ] Implementar el apartado de la cámara para poder agregar nuestras propias caratulas. <br>
 
 ##
 Si te gustó la aplicación no olvides dejar tu estrellita ⭐
