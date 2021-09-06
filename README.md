@@ -2,23 +2,23 @@
 
 Aplicación desarrollada para la asignatura Acceso a Datos en el 2º año de CFGS Desarrollo de Aplicaciones Multiplataforma. <br>
 
-iList-Game-v2 consiste en una aplicación en la que podremos agregar a una lista todos los videojuegos que queramos, siendo esta pública para todos los usuarios.
-En ella podremos seleccionar el videojuego que queramos y agregarlo a nuestra lista de juegos, ya sea porque los hemos jugado o porque los tenemos pendiente para terminar. <br>
+iList-Game-v2 es una aplicación en la que podremos y agregar a una lista todos los videojuegos que queramos, siendo esta pública para todo el mundo.
+Podremos seleccionar el videojuego que queramos y agregarlo a nuestra propia lista de juegos, ya sea porque los hemos jugado, los tenemos pendiente para terminar o porque nos gusten. <br>
 
 https://ilist-game-v2.web.app
 
 ## Login
-La primera pantalla que nos encontraremos al acceder a la aplicación es la de login, en la que necesitaremos estar registrados para poder acceder a la misma. <br> <br>
+La primera pantalla que nos encontraremos es la de acceso a la lista de juegos con nuestro perfil. En ella podremos hacer login (si estamos registrados) ó pulsar sobre el botón de "Crear Cuenta". <br> <br>
 ![](1.png)
 ![](gifcorreo2.gif)
 
 ## Crear Cuenta
-En el caso de que no tengamos una cuenta para acceder a iList-Game, podremos hacerlo pulsando sobre "Crear cuenta" y dentro registrarnos con un correo y contraseña de acceso. <br> <br>
+Pantalla de creación de cuenta para iList-Game. Para ello agregaremos una cuenta de correo electrónico y una contraseña. <br> <br>
 
 ![](2.png)
 
 ## Recuperación de Contraseña
-Si tenemos cuenta para la aplicación pero se nos ha olvidado la contraseña, ¡no te preocupes!. Si pulsamos sobre el botón de "Recuperar contraseña", accederemos a la ventana en la cuál nos solicitará un correo electrónica al que poder enviar la recuperación de la cuenta. <br> <br>
+Si tenemos cuenta pero se nos olvidadó la contraseña... ¡No te preocupes!. Si pulsamos sobre el botón de "Recuperar contraseña", accederemos a la pantalla en la que se nos solicitará un correo electrónica al que poder enviar la nueva contraseña de recuperación de cuenta. <br> <br>
 
 ![](3.png)
 
@@ -53,12 +53,12 @@ Pantalla sobre la que aparecerá una breve explicación sobre el funcionamiento 
 https://youtu.be/OucamVdFPeg
 
 ## Futuras Versiones
-- Insertar en menú desplegable la opción de "Mi Perfil" y poder editar y ver todos los datos de usuario.
-- Tocar sobre el nombre del videojuego y que nos aparezca una pequeña información sobre el mismo.
-- Poder hacer un ranking de nota media entre todos los usuarios y notas que se le den a los juegos.
-- Implementar la clasificación del juego por estrellas.
-- En el perfil poder agregar un nombre de usuario y crear una pequeña red entre jugadores.
-- Implementar el apartado de la cámara para poder agregar nuestras propias carcasas.
+[ ] Insertar en menú desplegable la opción de "Mi Perfil" y poder editar y ver todos los datos de usuario.
+[ ] Tocar sobre el nombre del videojuego y que nos aparezca una pequeña información sobre el mismo.
+[ ] Poder hacer un ranking de nota media entre todos los usuarios y notas que se le den a los juegos.
+[ ] Implementar la clasificación del juego por estrellas.
+[ ] En el perfil poder agregar un nombre de usuario y crear una pequeña red entre jugadores.
+[ ] Implementar el apartado de la cámara para poder agregar nuestras propias caratulas.
 
 ##
 Si te gustó la aplicación no olvides dejar tu estrellita ⭐
